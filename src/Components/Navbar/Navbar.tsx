@@ -1,6 +1,7 @@
 import "./Navbar.scss";
 import logo from "../../assets/images/MFAF LOGO PNG.png";
 import Button from "@mui/material/Button";
+import Btn from "../../Containers/Buttons/Btn";
 
 const Navbar = () => {
   return <nav className="container">
@@ -10,11 +11,9 @@ const Navbar = () => {
         <li>Who We Are</li>
         <li>Events</li>
         <li>Testimonials</li>
-        <Button 
-            variant="contained"
-            sx={{borderRadius: 10}}>
-            <li>Contact Us</li>
-        </Button>
+        <li>
+          <Btn title={"Contact Us"}/>
+        </li>
     </ul>
   </nav>;
 };
