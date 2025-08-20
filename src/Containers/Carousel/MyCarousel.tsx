@@ -1,8 +1,5 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import amir from "../../assets/images/shura/Gaphar.jpg";
-import amirah from "../../assets/images/shura/Faridah.jpg";
-import islamicEd from "../../assets/images/shura/Halimah.jpg";
 import "./myCarousel.scss";
 import ShuraMembers from "../Shura/ShuraMembers";
 import { responsive, shuraMembersData } from "../../data";
@@ -20,7 +17,6 @@ const MyCarousel = () => {
 
   return (
     <div>
-      <h1>My Carousel</h1>
       <Carousel responsive={responsive}>{shuraCard}</Carousel>
     </div>
   );

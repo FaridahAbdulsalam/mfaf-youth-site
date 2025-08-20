@@ -37,14 +37,14 @@ export const responsive = {
     alt: 'Picture of Amir',
     name: 'Gaphar',
     position: 'Amir',
-    description: 'Is embracing 2 rich, intertwined aspects of my identity'
+    description: 'is embracing 2 rich, intertwined aspects of my identity'
   }, 
   {
     src: amirah,
     alt: 'Picture of Amirah',
     name: 'Faridah',
     position: 'Amirah',
-    description: 'Is having an identity I cherish.'
+    description: 'is having an identity I cherish.'
   }, 
   {
     src: islamicEd,
