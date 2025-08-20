@@ -10,9 +10,7 @@ const App = () => {
       <Header/>
       <div className="container">
         <Shura/>
-        
       </div>
-      {/* Other components can be added here */}
     </div>
   )
 }
