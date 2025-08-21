@@ -1,7 +1,7 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import "./myCarousel.scss";
-import ShuraMembers from "../Shura/ShuraMembers";
+import ShuraMembers from "../../Components/ShuraMembers/ShuraMembers";
 import { responsive, shuraMembersData } from "../../data";
 
 const MyCarousel = () => {
