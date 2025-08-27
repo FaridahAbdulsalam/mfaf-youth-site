@@ -20,6 +20,7 @@ const Navbar = () => {
         <li>Home</li>
         <li>Who We Are</li>
         <li>Events</li>
+        <li>Gallery</li>
         <li>Testimonials</li>
         <li>
           <Btn title={"Contact Us"}/>
