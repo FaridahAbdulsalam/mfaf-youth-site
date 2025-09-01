@@ -100,3 +100,27 @@ export const responsive = {
     description: 'is like having a membership to 2 exclusive societies.'
   }
 ]
+
+export const testimonyData = [
+  {
+    name: "John Doe",
+    about: "Member since 2020",   
+    testimony: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua,"
+  },
+  {
+    name: "Jane Doe",
+    about: "Member since 2020",   
+    testimony: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua,"      
+  },
+  {
+    name: "Jack Doe",
+    about: "Member since 2020", 
+    testimony: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua,"
+  },
+  {
+    name: "Jamila Doe",
+    about: "Member since 2020",
+    testimony: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua,"
+  },
+  // Add more testimonies here
+]
