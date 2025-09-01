@@ -121,6 +121,6 @@ export const testimonyData = [
     name: "Jamila Doe",
     about: "Member since 2020",
     testimony: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua,"
-  },
+  }
   // Add more testimonies here
 ]
