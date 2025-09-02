@@ -5,8 +5,35 @@ import { faEnvelopeOpenText} from "@fortawesome/free-solid-svg-icons"
 import { faInstagram, faWhatsapp } from "@fortawesome/free-brands-svg-icons"
 import { faEnvelope, faPaperPlane } from "@fortawesome/free-regular-svg-icons"
 import Btn from "../../Containers/Buttons/Btn"
+import { FormEvent, useState } from "react"
 
 const Contact = () => {
+
+    const [result, setResult] = useState<String>("");
+
+  const onSubmit = async (event: FormEvent<HTMLFormElement> ) => {
+    event.preventDefault();
+    setResult("Sending....");
+    const formData = new FormData(event.target as HTMLFormElement);
+
+    formData.append("access_key", "5d0fe3a6-3f33-401c-92f3-eef63807bbf0");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      setResult("Form Submitted Successfully");
+      (event.target as HTMLFormElement).reset();
+    } else {
+      console.log("Error", data);
+      setResult(data.message);
+    }
+  };
+
   return (
     <>
     <Title title="Get in Touch" subTitle={"Contact Us"} />
@@ -32,7 +59,7 @@ const Contact = () => {
         </ul>
       </div>
       <div className="contact-col">
-        <form>
+        <form onSubmit={onSubmit}>
             <label htmlFor="name"> Your Name</label>
             <input type="text" name="name" placeholder="Enter your name" required/>
 
@@ -51,7 +78,7 @@ const Contact = () => {
                 </Btn>
             </button>
         </form>
-        <span></span>
+        <span>{result}</span>
       </div>
     </div>
     </>
