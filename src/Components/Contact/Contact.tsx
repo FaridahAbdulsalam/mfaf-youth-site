@@ -16,7 +16,7 @@ const Contact = () => {
     setResult("Sending....");
     const formData = new FormData(event.target as HTMLFormElement);
 
-    formData.append("access_key", "5d0fe3a6-3f33-401c-92f3-eef63807bbf0");
+    formData.append("access_key", "5d0fe3a6-3f33-401c-92f3-eef63807bbf0"); //This access key is for f.salami. Change to MFAF key once complete
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
@@ -70,7 +70,7 @@ const Contact = () => {
             <input type="text" name="phone" placeholder="Enter your mobile number" />
 
             <label>Message</label>
-            <textarea rows={6} placeholder="Type your message here" required></textarea>
+            <textarea rows={6} placeholder="Type your message here" name="message" required></textarea>
 
             <button type="submit" className="submit-btn">
                 <Btn title={"Send Message"}>

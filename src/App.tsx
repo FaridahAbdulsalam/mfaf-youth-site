@@ -4,7 +4,8 @@ import Shura from "./Containers/Shura/Shura";
 import Events from "./Components/OurEvents/Events";
 import Gallery from "./Components/Gallery/Gallery";
 import Testimonials from "./Containers/Testimonials/Testimonials";
-import Contact from "./Components/Contact/contact";
+import Contact from "./Components/Contact/Contact";
+import Footer from "./Components/Footer/Footer";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
         <Gallery />
         <Testimonials />
         <Contact/>
+        <Footer/>
       </div>
     </div>
   );
